@@ -1,0 +1,21 @@
+{% extends 'tokoapp/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row barang-page">
+        {% for barang in barangs %}
+        <div class="col-3 barang_show">
+            <div class="photo">
+                <img src="{{barang.foto}}">
+            </div>
+            <p class="nama_barang">{{barang.nama_barang}}</p>
+            <p>Rp {{barang.harga}}</p>
+            <a href="{% url 'tokoapp:detail' barang.id%}">Lihat Detail</a>
+        </div>
+        <div class="col-1"></div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

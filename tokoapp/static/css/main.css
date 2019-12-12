@@ -1,0 +1,66 @@
+/*-------------------- GENERAL -------------------- */
+*{
+    cursor: default;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/*-------------------- NAVBAR -------------------- */
+header .toko-online{
+    background-color: blue;
+    padding: 15px 0 0 0;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+header .navigation{
+    background-color: aqua;
+    text-align: left;
+    padding: 15px 0 0 0;
+}
+
+header .header{
+    padding: 1.4% 0% 0.2% 0%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 2%;
+}
+
+header nav ul li a{
+    color: white !important;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+header nav ul li a:hover{
+    color: #2ec6ce;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav ul li .active-page{
+    color: #2ec6ce;
+}
+
+/*-------------------- HOME -------------------- */
+.barang-page{
+    padding: 30px;
+}
+
+.barang_show{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    height: 250px;
+}
+
+.photo{
+    width: 100%;
+}
+
+.nama_barang{
+    font-weight: 600;
+}
