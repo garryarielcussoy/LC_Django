@@ -19,3 +19,8 @@ def detail_barang(request, barang_id):
 
 def tambah(request):
     return render(request, 'tokoapp/tambah_barang.html', {})
+
+def submit(request):
+    baru = Barang(nama_barang = request.POST['nama_barang'], foto = request.POST['foto'], harga=request.POST['harga'])
+    baru.save()
+    return HttpResponse('Success')

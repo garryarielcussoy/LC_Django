@@ -1,14 +1,10 @@
-{% extends 'tokoapp/base.html' %}
+{% extends 'tokoapp/base.html'%}
 
-{% block title %}Home{% endblock %}
-
-{% block content %}
-{% extends 'alphatech/base.html'%}
-
-{% block title %}Write Your Post{% endblock %}
+{% block title %}Tambah Barang{% endblock %}
 
 {% block content %}
-    <form method="POST" class="post-form" action="#">
+<div class=formwarp>
+    <form method="POST" class="post-form" action="{% url 'tokoapp/submit'%}">
         Tambah Barang
         <br />
         <br />
@@ -30,5 +26,5 @@
 
         <button type="submit" class="save btn btn-warning">Tambah</button>
     </form>
-{% endblock %}
+</div>
 {% endblock %}

@@ -4,10 +4,14 @@
 
 {% block content %}
 <div class="container">
-    <div class="row barang-page">
-        <div class="col-12" class="tambah">
-            <button class="save btn btn-warning"><a href="{% url 'tokoapp:tambah' %}">Tambah Barang</a></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 tambah">
+                <button class="save btn btn-warning"><a href="{% url 'tokoapp:tambah' %}">Tambah Barang</a></button>
+            </div>
         </div>
+    </div>
+    <div class="row barang-page">
         {% for barang in barangs %}
         <div class="col-3 barang_show">
             <div class="photo">

@@ -49,7 +49,8 @@ header nav ul li .active-page{
 
 /*-------------------- HOME -------------------- */
 .tambah{
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
 }
 
 .barang-page{
@@ -67,4 +68,8 @@ header nav ul li .active-page{
 
 .nama_barang{
     font-weight: 600;
+}
+
+.formwarp{
+    text-align: center;
 }
