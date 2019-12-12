@@ -48,6 +48,10 @@ header nav ul li .active-page{
 }
 
 /*-------------------- HOME -------------------- */
+.tambah{
+    padding: 20px;
+}
+
 .barang-page{
     padding: 30px;
 }

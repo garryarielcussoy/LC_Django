@@ -16,3 +16,6 @@ def detail_barang(request, barang_id):
         'barang' : barang
     }
     return render(request, 'tokoapp/detail_barang.html', sent)
+
+def tambah(request):
+    return render(request, 'tokoapp/tambah_barang.html', {})
