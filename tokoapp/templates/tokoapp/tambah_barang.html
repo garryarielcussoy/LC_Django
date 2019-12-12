@@ -3,5 +3,32 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+{% extends 'alphatech/base.html'%}
 
+{% block title %}Write Your Post{% endblock %}
+
+{% block content %}
+    <form method="POST" class="post-form" action="#">
+        Tambah Barang
+        <br />
+        <br />
+        {% csrf_token %}
+        <label for="nama_barang">Nama Barang</label>
+        <br />
+        <input class="input-box" type="text" name="nama_barang" id="nama_barang">
+        <br />
+
+        <label for="foto">Lokasi Foto</label>
+        <br />
+        <input class="input-box" type="text" name="foto" id="foto">
+        <br />
+
+        <label for="foto">Harga</label>
+        <br />
+        <input class="input-box" type="text" name="harga" id="harga">
+        <br />
+
+        <button type="submit" class="save btn btn-warning">Tambah</button>
+    </form>
+{% endblock %}
 {% endblock %}
